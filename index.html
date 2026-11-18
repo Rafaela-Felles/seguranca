@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Sistema de Votação</title>
+    <link rel="stylesheet" href="../desafio_seguranca/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="login-page">
+    <main class="login-container">
+        <div class="logo">🎶</div>
+
+        <h1>Bem-vindo!</h1>
+        <p class="subtitulo">Entre para votar no seu artista!!!!</p>
+
+        <form id="formLogin">
+            <div class="campo">
+               <label for="usuario">E-mail:</label>
+               <input type="email" id="usuario"
+                placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" placeholder="Digite sua Senha" required>
+            </div>
+
+            <p id="mensagemErro" class="mensagem-erro"></p>
+
+            <button type="submit" class="botao-principal">Entrar na Votação</button>
+        </form>
+
+        <p class="rodape">Votação</p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="../desafio_seguranca/script.js"></script>
+</body>
+</html>
